@@ -56,14 +56,19 @@ function readLine() {
     return inputString[currentLine++];
 }
 
-
 /*
  * Create the function factorial here
  */
-
-
-
-
+function factorial(num){ 
+    
+    var result = 1; 
+    
+    for (var i = 2; i <= num; i++){ 
+        result = result * i; 
+    } 
+    
+    return result; 
+}
 
 function main() {
     const n = +(readLine());
